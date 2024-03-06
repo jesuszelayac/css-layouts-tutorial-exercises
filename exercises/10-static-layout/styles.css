@@ -1,5 +1,27 @@
 /* your code here */
+.secondWrapper {
+	display: flex;
+	flex: 1; /* Allows .secondWrapper to expand and take available space */
+	gap: 10px; /* Adjust gap size as needed */
+}
 
+nav,
+section {
+	padding: 20px;
+	box-sizing: border-box; /* Includes padding in the width */
+}
+
+nav {
+	width: 20%; /* Adjust the width as needed */
+	/* If you want nav to also take full height */
+	min-height: 100%;
+}
+
+section {
+	flex-grow: 1; /* Takes up the remaining space */
+	/* If you want section to also take full height */
+	min-height: 100%;
+}
 /**************************************
 DON'T CHANGE ANYTHING AFTER THIS LINE
 **************************************/
